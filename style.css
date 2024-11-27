@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* For WebKit browsers (e.g., Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 10px; /* Adjust the width for vertical scrollbars */
+    height: 10px; /* Adjust the height for horizontal scrollbars */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the scrollbar color */
+    border-radius: 10px; /* Make it rounded */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darken on hover */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the track */
+  }
+  
+  body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+  }
+  .container {
+    /* display: grid; */
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+    grid-template-columns: auto;
+  }
+  /* navigasjonen */
+  .navigasjonsbar {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 100%;
+    margin-bottom: 1.5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5%;
+    row-gap: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000;
+  }
