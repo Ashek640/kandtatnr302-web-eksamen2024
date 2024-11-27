@@ -263,4 +263,40 @@
       color: white;
       }
     
+      .button {
+        display: inline-block;
+        padding: 17px 20px;
+        background-color: white; /* Farge på knappen */
+        color: black; /* Tekstfarge */
+        border-radius: 1000px;
+        text-decoration: none; /* Fjerner understrek på lenker */
+        font-weight: bold;
+        font-size: 20px;
+      }
       
+      .button:hover {
+        background-color: #030303; /* Farge ved hover */
+        color: white;
+      }
+      
+      .piler-venstre {
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 15px 15px;
+        border-radius: 50%;
+        opacity: 60%;
+        position: absolute;
+        left: 1%;
+        top: 45%;
+      }
+      
+      .piler-høyre {
+        background-color: rgb(255, 255, 255);
+        font-size: 20px;
+        padding: 15px 15px;
+        border-radius: 50%;
+        opacity: 60%;
+        position: absolute;
+        right: 1%;
+        top: 45%;
+      }
