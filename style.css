@@ -350,3 +350,40 @@
         color: rgb(255, 255, 255);
         background-color: #555;
       }
+
+      .produktbilde {
+        width: 100%;
+        border-radius: 25px;
+      }
+      
+      .produktnavn {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 1%;
+      }
+      
+      .produkt-navn-pris {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 8%;
+        margin-top: 2%;
+      }
+      
+      .produktpriser {
+        font-size: 18px;
+        margin: 1%;
+        font-weight: normal;
+      }
+      
+      .produktseksjoner {
+        display: grid;
+        grid-template-columns: 100%;
+        justify-content: space-between;
+        margin-bottom: 8%;
+        row-gap: 40px;
+      }
+      
+      .produktseksjonerarticle {
+        position: relative;
+      }
