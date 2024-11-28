@@ -574,3 +574,269 @@
       li {
         list-style: none;
       }
+
+
+      .handlekurvoverskrift {
+        text-align: center;
+      }
+      
+      .shippingoverskrift {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      
+      .shippingoverskrift input {
+        height: 35px;
+      }
+      
+      .shippingoverskrift button {
+        background-color: black;
+        color: white;
+        width: 100px;
+        height: 35px;
+      }
+      
+      .shippingforslag {
+        font-size: 20px;
+      }
+      
+      .shipping {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        margin-top: 10px;
+      }
+      
+      /*  product page CSS  */
+      
+      .produktdetal {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+      
+      .produktimgseksjon {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        gap: 5px;
+        grid-auto-rows: 15.9px;
+      }
+      .produktimg {
+        height: 100%;
+        width: 100%;
+      }
+      
+      .produktimg:nth-child(1) {
+        grid-row: span 7;
+      }
+      
+      .produktimg:nth-child(2) {
+        grid-row: span 21;
+      }
+      
+      .produktimg:nth-child(3) {
+        grid-row: span 7;
+      }
+      
+      .produktimg:nth-child(4) {
+        grid-row: span 7;
+      }
+      
+      /* General Styling */
+      
+      .produkt-beholder {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 15px;
+        overflow-y: scroll;
+        scrollbar-width: none; 
+         -ms-overflow-style: none; 
+      }
+      .produkt-beholder::-webkit-scrollbar {
+        display: none; 
+      }
+      
+      .produkt-overskrift {
+        margin-bottom: 10px;
+      }
+      
+      .produkt-tittel {
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        margin-top: 0%;
+      }
+      
+      .merke-navn {
+        font-size: 20px;
+        color: gray;
+        margin-bottom: 15px;
+        text-decoration: underline;
+      }
+      
+      .pris-detaljer {
+        font-size: 20px;
+        font-weight: normal;
+        margin-bottom: 15px;
+      }
+      
+      .farge-info {
+        font-size: 18px;
+        margin-bottom: 45px;
+      }
+      
+      .farge-navn {
+        font-weight: bold;
+      }
+      
+      /* Size Selection Form */
+      .størrelse-skjema {
+        margin-bottom: 20px;
+      }
+      
+      .størrelse-etikett {
+        font-size: 14px;
+        margin-bottom: 5px;
+        display: block;
+      }
+      
+      .størrelse-nedtrekksliste {
+        width: 100%;
+        padding: 15px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+        background-color: #e1e1e1;
+        height: 50px;
+        color: black;
+      }
+      
+      .størrelse-nedtrekksliste:hover {
+        border: 2px solid black;
+      }
+      
+      .størrelse-nedtrekksliste option {
+        background-color: #e9e9e9; /* Red with 10% opacity */
+      }
+      
+      /* Buttons */
+      .handlekurv-knapp {
+        display: block;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 15px;
+      }
+      
+      .handlekurv-knapp:hover {
+        background-color: #555;
+      }
+      
+      .ønskeliste-knapp {
+        display: flex;
+        border: 1px solid black;
+        background-color: rgba(255, 255, 255);
+        /* width: 46px; */
+        height: 46px; 	
+        padding:14px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .knapp {
+        font-size: 18px;
+      }
+      
+      .knapp:hover {
+        color: red;
+      }
+      
+      /* Divider Line */
+      .delelinje {
+        margin: 20px 0;
+        border: none;
+        border-top: 1px solid #ddd;
+      }
+      /* Accordion */
+.trekkspill-beholder {
+  margin-top: 15px;
+  border-top: 1px solid black;
+}
+
+.trekkspill-beholder li {
+  margin-top: 1%;
+  list-style: disc;
+  margin-left: 10%;
+}
+
+.trekkspill-beholderdetails {
+  border-bottom: 1px solid black;
+}
+
+/* pilene i produktsiden */
+
+.trekkspill-tittel {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 25px 0px 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  border: none;
+}
+
+.trekkspill-tittell {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 25px 0px 25px;
+  cursor: pointer;
+  border-bottom: 1px solid #ddd;
+  list-style: none;
+  border: none;
+  justify-content: space-between;
+}
+
+.trekkspill-tittell li {
+  list-style: none;
+  margin: 0;
+}
+
+.trekkspill-tittel::after {
+  content: "+";
+  float: right;
+}
+
+.trekkspill-innhold {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Reviews */
+.anmeldelser-beholder {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 16px;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.stjerner-visning {
+  color: black;
+  font-size: 18px;
+}
+
+.anmeldelser-antall {
+  color: gray;
+}
