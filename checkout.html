@@ -4,9 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="Ikoner/css/all.css">
+    <link rel="stylesheet" href="/Ikoner/css/solid.css">
+    <link rel="stylesheet" href="/Ikoner/css/brands.css">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Nettbutikk</title>
 </head>
 
 <body>
@@ -141,7 +147,7 @@
         <img src="bilder/shoppbagg1.jpg" alt="Produktbilde" class="checkoutbilde" />
         <article class="produkt-detaljer">
           <header>
-            <h2 class="produktnavn">PRODUCT NAME</h2>
+            <h2 class="produktnavn" itemprop="">PRODUCT NAME</h2> // add itemprop here
             <p class="produktpriser">Kr 1999</p>
             <p class="farge">Farge: <span>beige</span></p>
           </header>
@@ -158,7 +164,7 @@
             </section>
             <section class="antall">
               <label for="antall3">Antall</label>
-              <input id="antall3" type="number" value="1" min="1" class="antall-felt" />
+              <input id="antall3" type="number" value="1" min="1" class="antall-felt" aria-label="antall varer" />
             </section>
           </section>
         </article>

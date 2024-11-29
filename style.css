@@ -35,7 +35,28 @@ body {
     "main main main"
     "footer footer footer";
   grid-template-columns: auto;
+  position: relative;
 }
+
+.back-to-top{
+  position: absolute;
+  top: 60vh;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.back-to-top-icon{
+  display: inline-block;
+  position: sticky;
+  top: 50vh;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 20px 25px;
+}
+
 /* navigasjonen */
 .navigasjonsbar {
   display: flex;
@@ -91,7 +112,7 @@ a {
 }
 
 .søkefelt-ikon {
-  width: 70%;
+  width: 235px;
   position: relative;
 }
 
@@ -103,6 +124,7 @@ a {
   border-radius: 25px;
   border: 1.5px solid black;
   outline: none;
+  width: 235px;
 }
 
 .søkeknapp {
@@ -263,13 +285,6 @@ color: white;
     color: white;
     }
   
-
-
-
-
-
-
-
 .button {
   display: inline-block;
   padding: 17px 20px;
@@ -477,13 +492,14 @@ color: white;
 }
 
 .kategori p{
-  margin-bottom: 17%;
+  margin-bottom: 12%;
 }
 
 .Kategorieoverskrift {
   font-size: 32px;
   font-weight: 700;
-  margin-top: 15%;
+  margin-top: 20%;
+ 
 }
 
 .kategoribilder {
@@ -1448,7 +1464,34 @@ li {
 }
 
 
-@media screen and (min-width: 1024px) {
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+.container{
+  position: relative;
+}
+  .back-to-top{
+  position: absolute;
+  top: 120vh;
+  bottom: 5rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.back-to-top-icon{
+  display: inline-block;
+  position: sticky;
+  top: 60vh;
+  color: #fff;
+  font-size: 1.2rem;
+  background-color: #000;
+  border-radius: 50%;
+  padding: 20px 25px;
+}
   .navigasjonsbar {
     display: grid;
     grid-template-columns: 30% 50% 15%;
@@ -1478,8 +1521,8 @@ li {
   }
 
   .søkefelt-ikon {
-    width: 70%;
-    position: relative;
+      width: 235px;
+      position: relative;
   }
 
   .søkeknapp {
@@ -1587,7 +1630,10 @@ li {
 
   .Kategorieoverskrift {
     font-size: 35px;
+    margin-top: 0%;
+    margin-bottom: 0%;
   }
+
 
   .kategoribilder {
     display: grid;
@@ -1628,6 +1674,12 @@ li {
     align-items: center;
     font-size: 35px;
     margin-top: 35px;
+  }
+
+
+
+  .kategori p{
+    margin-bottom: 5%;
   }
 
   .anmeldelseseksjon {
